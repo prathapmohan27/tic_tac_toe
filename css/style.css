@@ -1,15 +1,16 @@
 body{
     margin: 0;
     padding: 0;
-    background: #3b3838;
+    background:#82d6fa;
 }
 #heading{
     padding: 20px;
     text-align: center;
     font-size: 1.5em;
-    background-color: #70736d;
+    background-color: #03638c;
     font-family: "Sofia", sans-serif;
     font-weight: 900;
+    color: #ffffff;
 }
 
 /* display winning result */
@@ -17,7 +18,7 @@ body{
     margin-top: 10px;
     text-align: center;
     font-size: 1.5em;
-    color: #f3fce8;
+    font-weight: 800;
 }
 
 /* within the container result gameContainer restart button */
@@ -30,25 +31,31 @@ body{
     width: 400px;
     height: 400px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: auto auto auto;
     gap: 5px;
     padding: 10px;
     margin: 10px;
 }
 
 .gameContainer .marker{
-    background: #adaba8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fffaf2;
     border-radius: 5px;
-    font-weight: 700;
+    font-weight: 900;
+    font-size: 2em;
 }
 
  #restart{
     margin-top: 20px;
     font-size: 1.5em;
-    background: #b3a59a;
+    background: #03638c;
     padding: 8px 20px;
     border-radius: 8px;
-    box-shadow: 5px 3px 8px #0e0d0d;
+    box-shadow: 8px 8px 8px #0e0d0d;
+    color: #fff;
+    font-weight: 800;
 }
 
 @media only screen and (max-width:768px){
