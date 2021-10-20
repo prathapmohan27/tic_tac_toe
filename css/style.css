@@ -17,8 +17,9 @@ body{
 #result{
     margin-top: 10px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 800;
+    color: #1156a8;
 }
 
 /* within the container result gameContainer restart button */

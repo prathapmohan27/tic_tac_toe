@@ -35,7 +35,7 @@ const  gameBoard=(function(){
                 if(first){
                     fillBox.innerHTML='&times;';
                     playerOneArray.push(parseInt(fillBox.dataset.index));
-                    display('player &oast; turn !');
+                    display('player &oast; turn ');
                     first=false;   
                     if(playerOneArray.length >=3){
                         Winner('player &times;',playerOneArray)
@@ -45,7 +45,7 @@ const  gameBoard=(function(){
     
                     fillBox.innerHTML='&oast;';
                     playerTwoArray.push(parseInt(fillBox.dataset.index));
-                    display('player &times; turn !');
+                    display('player &times; turn ');
                     first=true;
                     if(playerTwoArray.length >=3){
                         Winner('player &oast;',playerTwoArray)
@@ -68,7 +68,7 @@ const  gameBoard=(function(){
         marker.forEach((box)=>{
             box.innerHTML='';
         });
-        result.innerHTML='player &times; turn !'
+        result.innerHTML='player &times; turn'
         first=true;
         playerOneArray=[];
         playerTwoArray=[];
@@ -89,13 +89,13 @@ const  gameBoard=(function(){
 
     const Winner=(str,arr)=>{
         if(checker(arr)){
-            display(`${str} win !`)
+            display(`${str} Win !`)
             isCheckerStatus=false;
             isWin=false; 
         }
 
         else if(playerTwoArray.length+playerOneArray.length==9){
-            display('Game tie');
+            display('Game Over !');
 
         }
         
