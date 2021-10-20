@@ -68,21 +68,22 @@ const  gameBoard=(function(){
         marker.forEach((box)=>{
             box.innerHTML='';
         });
-        result.textContent='Start'
+        result.innerHTML='player &times; turn !'
         first=true;
         playerOneArray=[];
         playerTwoArray=[];
         isWin=true;
+        isCheckerStatus=false;
     }
 
     let isCheckerStatus=false;
 
     const checker=(arr)=>{
-      for(i=0;i<winingPossibility.length;i++){
-          if(isCheckerStatus){
-              return isCheckerStatus;
-          }
+      for(let i=0;i<=winingPossibility.length-1;i++){
         isCheckerStatus=winingPossibility[i].every(ele=>arr.includes(ele));
+        if(isCheckerStatus){
+            return isCheckerStatus;
+        }
       }
     } 
 
